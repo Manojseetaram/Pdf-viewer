@@ -1,31 +1,4 @@
-// // PdfViewer.tsx
-// import { useState } from "react";
-// import { Document, Page } from "react-pdf";
-// import pdf from "./assets/sample.pdf";
 
-
-
-// function PdfViewer() {
-//   const [numPages, setNumPages] = useState<number>(0);
-//   const [pageNumber, setPageNumber] = useState<number>(1);
-
-//   function onDocumentLoaded({ numPages }: { numPages: number }) {
-//     setNumPages(numPages);
-//     setPageNumber(1);
-//     console.log("Document Loaded", numPages);
-//   }
-
-//   return (
-//     <div>
-//       <Document file={pdf} onLoadSuccess={onDocumentLoaded}>
-//         <Page pageNumber={pageNumber} />
-//       </Document>
-//       <p>
-//         Page {pageNumber} of {numPages}
-//       </p>
-//     </div>
-//   );
-// }
 
 import { useState } from "react";
 import { Document, Page } from "react-pdf";
